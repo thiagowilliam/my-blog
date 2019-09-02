@@ -1,14 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+const ContactPage = () => (
+  <>
+    <h1>Pagina de Contato</h1>
 
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Home</h1>
     <ul>
       <li>
         <Link to="/" activeStyle={{ color: "red" }}>
@@ -27,7 +23,7 @@ const IndexPage = () => (
         </Link>
       </li>
     </ul>
-  </Layout>
+  </>
 )
 
-export default IndexPage
+export default ContactPage
