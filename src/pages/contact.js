@@ -1,29 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import Layout from "../components/Layout"
+import SEO from "../components/seo"
 
 const ContactPage = () => (
-  <>
-    <h1>Pagina de Contato</h1>
-
-    <ul>
-      <li>
-        <Link to="/" activeStyle={{ color: "red" }}>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/about" activeStyle={{ color: "red" }}>
-          About
-        </Link>
-      </li>
-
-      <li>
-        <Link to="/contact" activeStyle={{ color: "red" }}>
-          Contact
-        </Link>
-      </li>
-    </ul>
-  </>
+  <Layout>
+    <SEO title="About"></SEO>
+    <h1> Contato</h1>
+  </Layout>
 )
 
 export default ContactPage
